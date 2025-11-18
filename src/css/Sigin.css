@@ -1,0 +1,91 @@
+.signin-cotainer {
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-family: "Poppins", sans-serif; */
+  position: relative;
+}
+
+/* --- Top title --- */
+.signin-cotainer h2 {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #a855f7;
+  margin: 0;
+}
+
+/* --- Login title --- */
+.signin-cotainer h3 {
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+/* --- Form box --- */
+.signin-cotainer form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+/* --- Input --- */
+.signin-cotainer input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+  font-size: 1rem;
+}
+
+.signin-cotainer input::placeholder {
+  color: #bbb;
+}
+
+/* --- Button --- */
+.signin-cotainer button {
+  width: 110%;
+  background: #a855f7;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+.signin-cotainer button:hover {
+  background: #9333ea;
+  transform: scale(1.05);
+}
+
+/* --- Signup link --- */
+.signin-cotainer .link-signup {
+  margin-top: 20px;
+  text-align: center;
+  color: #ccc;
+}
+
+.signin-cotainer .link-signup a {
+  color: #a855f7;
+  text-decoration: none;
+}
+
+.signin-cotainer .link-signup a:hover {
+  color: #fff;
+  text-decoration: underline;
+}

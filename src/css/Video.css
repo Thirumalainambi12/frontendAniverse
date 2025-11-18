@@ -1,0 +1,77 @@
+/* ====== MAIN VIDEO PAGE CONTAINER ====== */
+.video-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b0b0b, #250060);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+  box-sizing: border-box;
+}
+
+/* ====== BACK BUTTON ====== */
+.video-container button {
+  align-self: flex-start;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+
+
+/* ====== VIDEO TITLE ====== */
+.video-container h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fdfdfd;
+}
+
+/* ====== VIDEO PLAYER ====== */
+.video-container video {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  margin-bottom: 25px;
+  outline: none;
+}
+
+/* ====== DESCRIPTION ====== */
+.video-container p {
+  max-width: 900px;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 16px;
+  color: #c9c9c9;
+}
+
+/* ====== ERROR / NOT FOUND STATE ====== */
+.video-head {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #150050, #000);
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.video-head h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+
+
+

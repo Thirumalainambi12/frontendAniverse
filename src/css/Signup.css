@@ -1,0 +1,111 @@
+
+.signup-container {
+  min-height: 100vh;
+  width: 100%;
+  background: radial-gradient(circle at center, #080010 0%, #000 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ✨ Glow effect */
+.signup-container::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  /* background: radial-gradient(circle, rgba(168, 85, 247, 0.25), transparent 70%); */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(90px);
+  z-index: 0;
+}
+
+/* 🩷 Title */
+.signup-container h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #b467ff;
+  margin-bottom: 25px;
+  z-index: 1;
+}
+
+/* 🧊 Signup Box (height reduced) */
+.signup {
+  background: rgba(17, 17, 17, 0.95);
+  padding: 30px 35px;
+  border-radius: 15px;
+  width: 310px;
+  text-align: center;
+  z-index: 2;
+  backdrop-filter: blur(8px);
+}
+
+/* 🔮 Subtitle */
+.signup h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+}
+
+/* 💫 Inputs smaller */
+.signup input {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.signup input:focus {
+  background: #222;
+}
+
+.signup button {
+  width: 100%;
+  background: linear-gradient(90deg, #a855f7, #9333ea);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+
+/* 🔗 Bottom link */
+.link-to-signup {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.link-to-signup p {
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+.link-to-signup a {
+  color: #b467ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.link-to-signup a:hover {
+  color: #fff;
+}
+

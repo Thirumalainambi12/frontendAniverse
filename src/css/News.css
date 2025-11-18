@@ -1,0 +1,74 @@
+.news-container {
+  padding: 40px;
+  padding-top: 90px;
+  padding-top: 110px; 
+  background-color: #0f1626;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  /* padding-top: 120px; */
+}
+.news-h2{
+  color: #0f1626;
+}
+.news-container h2 {
+  color: #7c16e2;
+  text-align: center;
+  font-size: 2rem;
+  /* margin-bottom: 30px; */
+}
+
+/* Each news block */
+.demon {
+  background-color: #181b2e;
+  padding: 25px;
+  margin: 25px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(124, 22, 226, 0.25);
+  transition: transform 0.3s ease;
+}
+
+
+/* Title inside each block */
+.demon h2 {
+  color: #e1e1e1;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Image container */
+.news-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* All images same size */
+.news-img img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover; /* keeps proportion but fills box */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for images */
+.news-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Summary styling */
+.demon h4 {
+  color: #7c16e2;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.demon p {
+  color: #cccccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 6px 0;
+}

@@ -1,0 +1,10 @@
+.container {
+  background-color: #ffffff;
+  min-height: 100vh;
+    
+  /* padding-bottom: 80px; */
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+  color: hsl(0, 0%, 93%);
+  overflow-x: hidden;
+}

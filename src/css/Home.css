@@ -1,0 +1,170 @@
+/* ---------- Global Container ---------- */
+.Home-container {
+  width: 100%;
+  background-color: #ececec;
+  color: #fcfcfc;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.head-img {
+  width: 100%;
+  height: 70vh; /* adjust as needed (e.g., 60vh or 80vh) */
+  overflow: hidden;
+  position: relative;
+}
+
+.head-img img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; ensures image fully covers the container */
+  display: block;
+  border-bottom: 3px solid #a14cf7;
+  /* box-shadow: 0 4px 15px rgba(161, 76, 247, 0.5); */
+}
+
+.title {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 20px 0 10px 0;
+  background: #000000; /* 🔹 Black background */
+  border-radius: 6px;
+}
+
+.title h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #a64dff;      /* 🔹 Premium Purple text */
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding-left: 10px;
+  border-left: 4px solid #a64dff; /* Purple highlight */
+}
+
+
+/* ---------- Anime Grid ---------- */
+.act,
+.dra {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  padding: 0 40px 50px;
+}
+
+/* ---------- Anime Cards ---------- */
+.act div,
+.dra div {
+  height: 460px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: #111;
+}
+
+.act div:hover,
+.dra div:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- Anime Images ---------- */
+.act img,
+.dra img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+/* ---------- Overlay Title ---------- */
+.act div::after,
+.dra div::after {
+  content: attr(alt);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+
+  /* color: #fff; */
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+
+/* ---------- Sub-Header Section ---------- */
+.sub-head {
+  text-align: center;
+  /* margin-top: 40px; */
+  /* margin-bottom: 40px; */
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  background-color: #111;
+}
+
+.sub-head h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #9940f3;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.sub-head p {
+  font-weight: 400;
+  color: #9c39ff;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 1440px) {
+  .act div,
+  .dra div {
+    height: 420px; /* large laptop */
+  }
+}
+
+@media (max-width: 1024px) {
+  .act,
+  .dra {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .act div,
+  .dra div {
+    height: 380px; /* medium laptop */
+  }
+}
+
+@media (max-width: 768px) {
+  .act,
+  .dra {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+  .act div,
+  .dra div {
+    height: 320px; /* tablet */
+  }
+}
+
+@media (max-width: 500px) {
+  .act,
+  .dra {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .act div,
+  .dra div {
+    height: 280px; /* mobile */
+  }
+}

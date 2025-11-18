@@ -1,0 +1,234 @@
+/* ======= MAIN NAVBAR CONTAINER ======= */
+.navigate-container {
+  width: 100%;
+  background: linear-gradient(90deg, #4b0082, #6a0dad); /* 💜 purple gradient */
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  /* position: fixed; */
+  top: 0;
+  z-index: 100;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* ======= NAV HEADER ======= */
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link-text {
+  text-decoration: none; /* underline remove */
+}
+
+/* ======= LEFT SIDE (Logo + Links) ======= */
+.nav-header > div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px; /* equal gap between items */
+}
+
+/* ======= LOGO ======= */
+.nav-header h1 {
+  font-size: 26px;
+  color: #ffd700; /* gold accent for logo */
+  margin-right: 40px;
+  cursor: pointer;
+  /* letter-spacing: 1px; */
+}
+
+/* ======= LINKS ======= */
+.nav-header h2 {
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+  cursor: pointer;
+}
+
+.nav-header h2:hover {
+  color: #ffd700; /* gold hover */
+}
+
+/* ======= CATEGORIES SECTION ======= */
+.nav-item {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* ======= DROPDOWN MENU ======= */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: #2a004f;
+  width: 650px;
+  padding: 25px 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border-top: 3px solid #ffd700;
+  z-index: 999;
+}
+
+/* show dropdown on hover */
+.categories:hover .dropdown {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+}
+
+/* ======= DROPDOWN LINKS ======= */
+.dropdown a {
+  display: block;
+  width: 45%;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 0;
+  /* transition: all 0.3s ease; */
+}
+
+.dropdown a:hover {
+  color: #ffd700;
+  padding-left: 8px;
+}
+/* ======= SEARCH BAR ======= */
+.search {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  background-color: #3b007d;
+  border-radius: 25px;
+  padding: 8px 16px;
+  width: 240px; /* 🔹 Increased width */
+  transition: all 0.3s ease;
+}
+
+.search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 8px 10px;
+  font-size: 15px;
+  width: 100%; /* 🔹 Input fills entire box */
+}
+
+.search i {
+  color: #ffd700;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
+
+
+
+
+/* ======= BOOKMARK ICON ======= */
+.fa-bookmark {
+  margin-left: 25px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: white;
+}
+
+.fa-bookmark:hover {
+  color: #ffd700;
+}
+
+/* ======= PREMIUM BUTTON ======= */
+.bttn {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  background-color: #ffd700;
+  color: #4b0082;
+  border-radius: 25px;
+  padding: 6px 12px;
+  transition: 0.3s;
+}
+
+.bttn:hover {
+  background-color: #ffcc00;
+  transform: scale(1.05);
+}
+
+.bttn i {
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.bttn button {
+  background: none;
+  border: none;
+  color: #4b0082;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+span {
+  color: white;
+  text-decoration: none;
+}
+
+.act {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 30px;
+  background: #0d0d0d;
+}
+
+.act div {
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.act div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(162, 92, 255, 0.4);
+}
+
+.act img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.act h4 {
+  text-align: center;
+  color: #d39aff;
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.act p {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #c39eff;
+  font-size: 1.3rem;
+  margin-top: 50px;
+}
+.logout img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
+  margin-top: -10px; /* 👈 move it slightly up */
+}
+
+
+

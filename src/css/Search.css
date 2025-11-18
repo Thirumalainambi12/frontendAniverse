@@ -1,0 +1,48 @@
+.search-container {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); */
+  gap: 30px;
+  padding: 40px;
+  justify-items: center;
+  align-items: center;
+  background-color: #121212;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Each anime card */
+.search-container div {
+  background: #1e1e1e;
+  border-radius: 14px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 260px; /* increased width */
+}
+
+/* Hover effect */
+.search-container div:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+}
+
+/* Bigger, centered image */
+.search-container img {
+  width: 100%;
+  height: 340px; /* increased height */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 2px solid #ff5757;
+  border-radius: 4px;
+}
+
+/* Text when no results */
+.search-container p {
+  color: #ccc;
+  font-size: 1.1rem;
+  text-align: center;
+  grid-column: 1 / -1;
+  margin-top: 60px;
+}
