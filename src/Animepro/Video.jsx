@@ -9,7 +9,7 @@ function Video() {
   const navigate = useNavigate();
 
   useEffect(() => {
-  const fixedGenre = Genre.charAt(0).toUpperCase() + Genre.slice(1); // "free" → "Free"
+  const fixedGenre = Genre.charAt(0).toUpperCase() + Genre.slice(1);
     axios
       .get(`http://localhost:4000/${fixedGenre}/${id}`)
       .then((res) => setVideo(res.data))

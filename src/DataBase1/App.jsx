@@ -6,7 +6,7 @@ function App() {
 
     
     const [newTask, setNewTask] = useState("");
-    const url = "http://localhost:4000/Data"
+    const url = "https://todotaskbackend.onrender.com/tasks"
 
     const [tasks, setTasks] = useState([]);
     const [msg, setMsg] = useState("");
