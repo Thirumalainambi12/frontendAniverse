@@ -62,23 +62,49 @@
   color: #fff;
   background: #ff5c8d;
 }
-
-/* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 1024px) {
+/* ===== Tablet view (max width 900px) ===== */
+@media (max-width: 900px) {
   .an-card {
-    grid-template-columns: repeat(3, 1fr); /* 3 per row on tablets */
-  }
-}
-
-@media (max-width: 768px) {
-  .an-card {
-    grid-template-columns: repeat(2, 1fr); /* 2 per row on phones */
+    grid-template-columns: repeat(3, 1fr); /* 3 cards in a row */
     gap: 15px;
     padding: 20px;
   }
 
   .anii-card {
+    max-width: 180px;
+    height: 260px;
+  }
+}
+
+/* ===== Mobile view (max width 600px) ===== */
+@media (max-width: 600px) {
+  .an-card {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards in a row */
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .anii-card {
     max-width: 160px;
-    height: 220px;
+    height: 230px;
+  }
+
+  .anii-card i {
+    font-size: 16px;
+    top: 8px;
+    right: 8px;
+    padding: 4px;
+  }
+}
+
+/* ===== Very small mobile (max width 400px) ===== */
+@media (max-width: 400px) {
+  .an-card {
+    grid-template-columns: repeat(1, 1fr); /* Full width 1 card */
+  }
+
+  .anii-card {
+    max-width: 100%;
+    height: 260px;
   }
 }

@@ -16,7 +16,7 @@ function fantasy() {
         .catch((err) => console.log(err));
     },[])
   return (
-    <div>
+    <div className='title'>
         <h3>Fantasy</h3>
         <Animecard Animecard = {fantasy}/>
     </div>

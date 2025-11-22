@@ -109,3 +109,48 @@
   color: #fff;
 }
 
+@media (max-width: 600px) {
+  .signup-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+  }
+
+  .signup {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .signup h3 {
+    font-size: 1.05rem;
+  }
+
+  .signup input {
+    padding: 9px;
+    font-size: 0.9rem;
+  }
+
+  .signup button {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .signup-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .signup {
+    width: 95%;
+    padding: 20px 16px;
+  }
+
+  .signup input {
+    padding: 8px;
+    font-size: 0.88rem;
+  }
+
+  .signup button {
+    font-size: 0.9rem;
+  }
+}

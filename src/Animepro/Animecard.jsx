@@ -12,6 +12,7 @@ function Animecard({ Genre, freecard, Animecard }) {
           <Link to={`/${Genre}/${free.id}`}>
             <img src={free.img} alt={free.name} />
           </Link>
+          <i className="fa-solid fa-bookmark" onClick={()=>state.AddToBookmark(free)}></i>
         </div>
       ))}
 
@@ -22,6 +23,7 @@ function Animecard({ Genre, freecard, Animecard }) {
             <Link to={`/${Genre}/${ani.id}`}>
               <img src={ani.img} alt={ani.name} />
             </Link>
+            
           ) : (
             <div
               onClick={() => {
@@ -29,6 +31,7 @@ function Animecard({ Genre, freecard, Animecard }) {
               }}
             >
               <img src={ani.img} alt={ani.name} />
+              <i className="fa-solid fa-bookmark" onClick={()=>state.AddToBookmark(free)}></i>
             </div>
           )}
         </div>

@@ -17,7 +17,7 @@ function Comedy() {
     },[])
   return (
     <div>
-      <div>
+      <div className='title'>
         <h3>Comedy</h3>
         <Animecard Animecard = {comedy}/>
       </div>

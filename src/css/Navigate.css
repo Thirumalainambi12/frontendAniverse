@@ -232,3 +232,70 @@ span {
 
 
 
+/* ===== MOBILE NAVBAR FIX ===== */
+@media (max-width: 900px) {
+  .nav-header > div {
+    gap: 18px;
+  }
+
+  .nav-header h1 {
+    font-size: 22px;
+    margin-right: 10px;
+  }
+
+  .search {
+    width: 180px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .nav-header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .nav-header > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .nav-header h2 {
+    font-size: 15px;
+  }
+
+  .search {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .fa-bookmark {
+    margin-left: 0;
+  }
+
+  .bttn {
+    margin-left: 0;
+  }
+
+  .dropdown {
+    width: 90%;
+    padding: 18px;
+    left: 5%;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-header h1 {
+    font-size: 20px;
+  }
+
+  .nav-header h2 {
+    font-size: 14px;
+  }
+
+  .search input {
+    font-size: 14px;
+  }
+}

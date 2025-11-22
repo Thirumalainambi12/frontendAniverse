@@ -27,8 +27,6 @@
 
 .title {
   width: 100%;
-  padding: 10px 20px;
-  margin: 20px 0 10px 0;
   background: #000000; /* 🔹 Black background */
   border-radius: 6px;
 }
@@ -124,47 +122,67 @@
   opacity: 0.9;
   letter-spacing: 0.5px;
 }
-
-/* ---------- Responsive Design ---------- */
-@media (max-width: 1440px) {
-  .act div,
-  .dra div {
-    height: 420px; /* large laptop */
-  }
-}
-
-@media (max-width: 1024px) {
+/* ---------- Tablet (max-width 900px) ---------- */
+@media (max-width: 900px) {
   .act,
   .dra {
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 20px;
+    padding: 0 20px 40px;
   }
-  .act div,
-  .dra div {
-    height: 380px; /* medium laptop */
+
+  .head-img {
+    height: 55vh;
+  }
+
+  .sub-head h2 {
+    font-size: 1.8rem;
   }
 }
 
-@media (max-width: 768px) {
+/* ---------- Mobile (max-width 600px) ---------- */
+@media (max-width: 600px) {
   .act,
   .dra {
     grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
+    gap: 14px;
+    padding: 0 15px 30px;
   }
+
+  .head-img {
+    height: 40vh;
+  }
+
+  .title h3 {
+    font-size: 1.2rem;
+    padding-left: 8px;
+  }
+
+  .sub-head h2 {
+    font-size: 1.6rem;
+  }
+
+  .sub-head p {
+    font-size: 0.9rem;
+  }
+
   .act div,
   .dra div {
-    height: 320px; /* tablet */
+    height: 300px;
   }
 }
 
-@media (max-width: 500px) {
+/* ---------- Very Small Phones (max-width 400px) ---------- */
+@media (max-width: 400px) {
   .act,
   .dra {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
+    grid-template-columns: 1fr;
   }
+
   .act div,
   .dra div {
-    height: 280px; /* mobile */
+    height: 330px;
   }
 }
+
+

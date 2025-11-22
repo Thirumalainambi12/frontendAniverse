@@ -93,3 +93,54 @@
 .log-butn button:hover {
   color: #ffe0ff;
 }
+@media (max-width: 700px) {
+  .profile-container h2 {
+    font-size: 1.7rem;
+  }
+
+  .profile-name {
+    width: 260px;
+    padding: 25px 25px;
+  }
+
+  .profile-name img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .profile-name h3 {
+    font-size: 1.1rem;
+  }
+
+  .log-butn {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .log-butn button {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .profile-container {
+    padding: 20px;
+  }
+
+  .profile-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-name {
+    width: 100%;
+  }
+
+  .profile-name img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .log-butn {
+    padding: 10px 0;
+  }
+}

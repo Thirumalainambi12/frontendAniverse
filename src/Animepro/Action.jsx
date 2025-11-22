@@ -16,7 +16,7 @@ function Action() {
         .catch((err) => console.log(err));
     },[])
   return (
-    <div>
+    <div className='title'>
         <h3>Action</h3>
         <Animecard Animecard = {action}/>
     </div>

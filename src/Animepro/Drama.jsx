@@ -15,7 +15,7 @@ function Drama() {
         .catch((err) => console.log(err));
     },[])
   return (
-    <div>
+    <div className='title'>
         <h3>Drama</h3>
         <Animecard Animecard = {drama}/>
     </div>

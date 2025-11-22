@@ -446,3 +446,83 @@
   color: #a855f7; /* soft purple hover */
   transform: scale(1.1);
 }
+/* -------- Responsive Styles -------- */
+@media (max-width: 900px) {
+  .header h2 {
+    font-size: 22px;
+  }
+
+  .section1 h1 {
+    font-size: 2.2rem;
+  }
+
+  .section1 h2 {
+    font-size: 1.1rem;
+  }
+
+  .package .all {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  .header h2 {
+    font-size: 20px;
+  }
+
+  .header button {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+
+  .video {
+    height: 80vh; /* reduce height for mobile */
+  }
+
+  .bg-video {
+    height: 100%;
+  }
+
+  .section1 h1 {
+    font-size: 1.8rem;
+  }
+
+  .section1 h2 {
+    font-size: 1rem;
+  }
+
+  .package {
+    padding: 40px 15px;
+  }
+
+  .package .monthly,
+  .package .yearly {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .section3-anime img {
+    height: 240px;
+  }
+
+  .section3-anime {
+    padding: 40px 18px;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section1 h1 {
+    font-size: 1.6rem;
+  }
+
+  .section3-anime img {
+    height: 200px;
+  }
+}

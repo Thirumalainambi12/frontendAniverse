@@ -89,3 +89,44 @@
   color: #fff;
   text-decoration: underline;
 }
+@media (max-width: 600px) {
+  .signin-cotainer h2 {
+    font-size: 1.5rem;
+    top: 25px;
+  }
+
+  .signin-cotainer form {
+    width: 90%;
+    padding: 25px 18px;
+  }
+
+  .signin-cotainer input {
+    font-size: 0.95rem;
+    padding: 9px;
+  }
+
+  .signin-cotainer button {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .signin-cotainer h2 {
+    font-size: 1.3rem;
+  }
+
+  .signin-cotainer form {
+    width: 95%;
+    padding: 20px 15px;
+  }
+
+  .signin-cotainer input {
+    padding: 8px;
+  }
+
+  .signin-cotainer button {
+    padding: 9px;
+  }
+}

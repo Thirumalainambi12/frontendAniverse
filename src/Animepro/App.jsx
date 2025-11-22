@@ -34,15 +34,15 @@ function App() {
 
   const [search, setSearch] = useState("");
 
-  const AddToBookmark = (anii) =>{
-    setBookMark([...bookmark,anii]);
+  const AddToBookmark = (item) => {
+    setBookMark([...bookmark, item]);
     setCount(count + 1);
-  }
+  };
 
-  const RemoveToBookMark = (item) =>{
-    setBookMark(bookmark.filter((anii) => anii.id !== item.id));
-    setCount((count)=> count > 0 ? count -1 : 0);
-  }
+  const RemoveToBookMark = (item) => {
+    setBookMark(bookmark.filter(b => b.id !== item.id));
+    setCount(count - 1);
+  };
 
   return (
     <AppContext.Provider value={{isLoggedIn, setIsLoggedIn, isAllow, setIsAllow, AddToBookmark, RemoveToBookMark, bookmark, setBookMark, userData, setUserData , search, setSearch}}>

@@ -95,46 +95,37 @@
 .ok-btn:hover {
   background-color: #1a992b;
 }
-
-/* Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translate(-50%, -48%);
+@media (max-width: 600px) {
+  .pay-box {
+    padding: 25px 20px;
+    width: 90%;
   }
-  to {
-    opacity: 1;
-    transform: translate(-50%, -50%);
+
+  .pay-title {
+    font-size: 1.4rem;
   }
-}
-/* Loader spinner */
-.loader {
-  border: 4px solid #3a0066;
-  border-top: 4px solid #ffffff;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  margin: 20px auto;
-  animation: spin 1s linear infinite;
-}
 
-/* Rotating animation */
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+  .pay-options {
+    flex-direction: column;
+    gap: 12px;
+  }
 
-/* Loading text animation */
-.loading-text {
-  font-size: 16px;
-  color: #cec7d6;
-  margin-top: 10px;
-  letter-spacing: 1px;
-  animation: pulse 1.5s infinite ease-in-out;
-}
+  .pay-options label {
+    font-size: 14px;
+  }
 
-@keyframes pulse {
-  0% { opacity: 0.5; }
-  50% { opacity: 1; }
-  100% { opacity: 0.5; }
+  .pay-btn {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .popup {
+    width: 85%;
+    padding: 30px 20px;
+  }
+
+  .ok-btn {
+    width: 100%;
+    padding: 10px 0;
+  }
 }
