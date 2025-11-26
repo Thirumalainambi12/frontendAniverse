@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "../css/App.css";
 import Signin from './Signin'
-import Signup from './signup'
+import Signup from './Signup'
 import Login from './Login'
 import Header from './Header';
 import Home from './Home' 
