@@ -16,7 +16,7 @@ import Drama from './Drama'
 import Video from './Video';
 import Premium from './Premium';
 import { Route, Routes, Navigate } from 'react-router-dom'
-import { AppContext } from "../Context.jsx/AppContext";
+import { AppContext } from "../Context.jsx/AppContext.jsx";
 import PrivateRouter from './PrivateRoute';
 import Search from './Search';
 import Bookmark from './Bookmark';
