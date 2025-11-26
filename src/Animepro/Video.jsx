@@ -11,7 +11,7 @@ function Video() {
   useEffect(() => {
   const fixedGenre = Genre.charAt(0).toUpperCase() + Genre.slice(1);
     axios
-      .get(`http://localhost:4000/${fixedGenre}/${id}`)
+      .get(`https://backendjsondb-tp7v.onrender.com/${fixedGenre}/${id}`)
       .then((res) => setVideo(res.data))
       .catch(() => setVideo(null));
   }, [Genre, id]);

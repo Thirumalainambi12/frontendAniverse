@@ -8,7 +8,7 @@ function Home() {
   const state = useContext(AppContext);
   
   const [free, setFree] = useState([]);
-  const freeurl = "http://localhost:4000/Free"
+  const freeurl = "https://backendjsondb-tp7v.onrender.com/Free"
   useEffect (() => {
     axios
       .get(freeurl)
@@ -20,19 +20,19 @@ function Home() {
   },[])
 
   const [action, setAction] = useState([]);
-  const ActionUrl = "http://localhost:4000/Action";
+  const ActionUrl = "https://backendjsondb-tp7v.onrender.com/Action";
 
   const [drama, setDrama]= useState([]);
-  const DramaUrl = "http://localhost:4000/Drama";
+  const DramaUrl = "https://backendjsondb-tp7v.onrender.com/Drama";
 
   const [comedy, setComedy] = useState([]);
-  const Comedyurl = "http://localhost:4000/Comedy";
+  const Comedyurl = "https://backendjsondb-tp7v.onrender.com/Comedy";
 
   const [fantasy, setFantasy] = useState([]);
-  const FantasyUrl = "http://localhost:4000/Fantasy";
+  const FantasyUrl = "https://backendjsondb-tp7v.onrender.com/Fantasy";
 
   const [romance, setRomance] = useState([]);
-  const RomanceUrl = "http://localhost:4000/Romance";
+  const RomanceUrl = "https://backendjsondb-tp7v.onrender.com/Romance";
 
 
   useEffect (() => {

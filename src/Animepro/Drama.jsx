@@ -4,7 +4,7 @@ import Animecard from './Animecard';
 
 function Drama() {
     const [drama, setDrama]= useState([]);
-    const DramaUrl = "http://localhost:4000/Drama";
+    const DramaUrl = "https://backendjsondb-tp7v.onrender.com/Drama";
     useEffect (() => {
         axios
         .get(DramaUrl)

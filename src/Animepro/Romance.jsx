@@ -4,7 +4,7 @@ import Animecard from './Animecard';
 
 function Romance() {
   const [romance, setRomance] = useState([]);
-  const RomanceUrl = "http://localhost:4000/Romance";
+  const RomanceUrl = "https://backendjsondb-tp7v.onrender.com/Romance";
 
     useEffect (() => {
         axios

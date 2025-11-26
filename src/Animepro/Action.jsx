@@ -4,7 +4,7 @@ import Animecard from './Animecard';
 
 function Action() {
     const [action, setAction] = useState([]);
-    const ActionUrl = "http://localhost:4000/Action";
+    const ActionUrl = "https://backendjsondb-tp7v.onrender.com/Action";
 
     useEffect (() => {
         axios

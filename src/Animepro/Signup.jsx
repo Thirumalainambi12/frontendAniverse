@@ -12,7 +12,7 @@ function signup() {
     const [confirmPassword, setConfirmPassword] = useState("");
 
     const [users, setUsers] = useState([]);
-    const url = "http://localhost:4000/Users";
+    const url = "https://backendjsondb-tp7v.onrender.com/Users";
     const hashedpass = bcrypt.hashSync(password, 10);
 
     const navigate = useNavigate();

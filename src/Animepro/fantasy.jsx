@@ -4,7 +4,7 @@ import Animecard from './Animecard';
 
 function fantasy() {
   const [fantasy, setFantasy] = useState([]);
-  const FantasyUrl = "http://localhost:4000/Fantasy";
+  const FantasyUrl = "https://backendjsondb-tp7v.onrender.com/Fantasy";
 
     useEffect (() => {
         axios

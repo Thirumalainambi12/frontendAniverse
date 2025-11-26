@@ -6,7 +6,7 @@ import "../css/Login.css";
 
 function Login() {
   const [animeData, setAnimeData] = useState([]);
-  const url = "http://localhost:4000/Login"
+  const url = "https://backendjsondb-tp7v.onrender.com/Login"
 
   const [year, setYear] = useState(false);
 

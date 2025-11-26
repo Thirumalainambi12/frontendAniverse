@@ -4,7 +4,7 @@ import Animecard from './Animecard';
 
 function Comedy() {
   const [comedy, setComedy] = useState([]);
-  const Comedyurl = "http://localhost:4000/Comedy";
+  const Comedyurl = "https://backendjsondb-tp7v.onrender.com/Comedy";
 
     useEffect (() => {
         axios
