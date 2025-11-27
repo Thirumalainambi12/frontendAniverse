@@ -93,54 +93,104 @@
 .log-butn button:hover {
   color: #ffe0ff;
 }
-@media (max-width: 700px) {
-  .profile-container h2 {
-    font-size: 1.7rem;
-  }
 
-  .profile-name {
-    width: 260px;
-    padding: 25px 25px;
-  }
+@media (max-width: 480px) {
 
-  .profile-name img {
-    width: 90px;
-    height: 90px;
-  }
-
-  .profile-name h3 {
-    font-size: 1.1rem;
-  }
-
-  .log-butn {
+  /* MAIN CONTAINER */
+  .profile-container {
     width: 100%;
-    padding: 12px 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #08000f, #150021 40%, #0b0014);
+    padding: 30px 20px;
+    color: #fff;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    animation: fadeIn 0.5s ease;
+  }
+
+  /* PAGE TITLE */
+  .profile-container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    color: #f1f1f1ff;
+    letter-spacing: 1px;
+    /* text-shadow: 0 0 12px rgba(215, 166, 255, 0.6); */
+  }
+
+  /* PROFILE BOX */
+  .profile-name {
+    width: 72%;
+    margin: 0 auto;
+    padding: 26px 20px;
+    background: rgba(130, 0, 200, 0.18);
+    border-radius: 18px;
+    border: 1.5px solid rgba(180, 50, 255, 0.45);
+    /* box-shadow: 0 0 25px rgba(150, 0, 230, 0.35); */
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  /* PROFILE PIC */
+  .profile-name img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d56bff;
+    /* box-shadow: 0 0 25px rgba(209, 80, 255, 0.8); */
+    transition: 0.25s ease;
+  }
+
+  .profile-name img:active {
+    transform: scale(0.92);
+    opacity: 0.85;
+  }
+
+  /* USERNAME */
+  .profile-name h3 {
+
+    color: #f3e4ff;
+    /* text-shadow: 0 0 8px rgba(255, 220, 255, 0.4); */
+  }
+
+  /* SIGNOUT BUTTON SECTION */
+  .log-butn {
+    /* margin-top: 35px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 12px; */
+  }
+
+  .log-butn i {
+    font-size: 22px;
+    color: #ffffffff;
   }
 
   .log-butn button {
-    font-size: 0.95rem;
+    /* padding: 10px 20px; */
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
   }
+
+  .log-butn button:active {
+    transform: scale(0.92);
+    opacity: 0.9;
+  }
+
+  /* ANIMATION */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
 }
 
-@media (max-width: 450px) {
-  .profile-container {
-    padding: 20px;
-  }
-
-  .profile-container h2 {
-    font-size: 1.5rem;
-  }
-
-  .profile-name {
-    width: 100%;
-  }
-
-  .profile-name img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .log-butn {
-    padding: 10px 0;
-  }
-}

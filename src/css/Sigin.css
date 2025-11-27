@@ -111,22 +111,106 @@
     padding: 10px;
   }
 }
+/* 📱 MOBILE ONLY */
+@media (max-width: 480px) {
 
-@media (max-width: 400px) {
+  .signin-cotainer {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background: #000;                 /* dark theme */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;          /* center vertically */
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+
   .signin-cotainer h2 {
-    font-size: 1.3rem;
+    font-size: 24px;
+    font-weight: 700;
+    color: #c58aff;                   /* anime purple highlight */
+    margin-bottom: 20px;
   }
 
-  .signin-cotainer form {
-    width: 95%;
-    padding: 20px 15px;
+  .signin-cotainer h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 600;
   }
 
-  .signin-cotainer input {
-    padding: 8px;
+  .signin-cotainer p {
+    font-size: 13px;
+    margin: 6px 0;
   }
 
-  .signin-cotainer button {
-    padding: 9px;
+  /* ---------- FORM ---------- */
+  .signin-cotainer .form {
+    width: 100%;
+    max-width: 300px;
+    background: #111;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid #2e0039;       /* subtle purple border */
+    box-shadow: 0 0 12px rgba(162, 62, 255, 0.15);
   }
+
+  .signin-cotainer .form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #3b004f;
+    background: #1a001f;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s ease;
+  }
+
+  .signin-cotainer .form input::placeholder {
+    color: #b9b9b9;
+  }
+
+  .signin-cotainer .form input:focus {
+    border-color: #a020f0;
+    box-shadow: 0 0 10px rgba(160, 32, 240, 0.5);
+  }
+
+  .signin-cotainer .form button {
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #a020f0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+
+  .signin-cotainer .form button:active {
+    transform: scale(0.97);
+  }
+
+  /* ---------- SIGNUP LINK ---------- */
+  .signin-cotainer .link-signup {
+    margin-top: 20px;
+  }
+
+  .signin-cotainer .link-signup p {
+    font-size: 14px;
+  }
+
+  .signin-cotainer .link-signup a p {
+    color: #a020f0;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+
 }
+

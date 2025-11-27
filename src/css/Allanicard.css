@@ -97,14 +97,58 @@
   }
 }
 
-/* ===== Very small mobile (max width 400px) ===== */
-@media (max-width: 400px) {
+/* 📱 MOBILE ONLY — Anime Cards */
+@media (max-width: 480px) {
+
+  /* Container around all cards */
   .an-card {
-    grid-template-columns: repeat(1, 1fr); /* Full width 1 card */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 12px;
+    justify-content: space-between;
   }
 
+  /* Individual card */
   .anii-card {
-    max-width: 100%;
-    height: 260px;
+    width: 48%;                    /* 2 cards per row */
+    position: relative;
+  }
+
+  /* Card image */
+  .anii-card img {
+    width: 100%;
+    height: 210px;
+    border-radius: 12px;
+    object-fit: cover;
+    background: #111;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    transition: 0.2s ease-in-out;
+  }
+
+  /* Touch feedback */
+  .anii-card img:active {
+    transform: scale(0.97);
+    opacity: 0.9;
+  }
+
+  /* Bookmark button */
+  .anii-card i {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #fff;
+    background: rgba(0,0,0,0.55);
+    border-radius: 50%;
+    padding: 8px;
+    backdrop-filter: blur(4px);
+    transition: 0.2s;
+  }
+
+  .anii-card i:active {
+    transform: scale(0.85);
+    background: rgba(160, 32, 240, 0.7);   /* purple click effect */
   }
 }
+

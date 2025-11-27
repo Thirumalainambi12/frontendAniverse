@@ -1,15 +1,18 @@
 .container {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   min-height: 100vh;
     
   /* padding-bottom: 80px; */
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   /* font-family: "Poppins", sans-serif; */
-  color: hsl(0, 0%, 93%);
+  color: hsla(0, 0%, 0%, 1.00);
   overflow-x: hidden;
 }
 @media (max-width: 600px) {
   .container {
-    padding: 0 12px; /* margin safe area */
+    /* padding: 0 12px; margin safe area */
   }
+}
+div.container {
+  background-color: #000 !important;
 }

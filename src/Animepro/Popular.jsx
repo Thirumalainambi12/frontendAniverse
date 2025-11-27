@@ -73,7 +73,7 @@ function Popular() {
   return (
     <div className='Polpular'>
       <div>
-        <h2 style={{ color: "#7c16e2"}}>The Popular Anime</h2>
+        <h2 style={{ color: "#ffffffff"}}>The Popular Anime</h2>
         <div className='pop-card'>
             <Animecard Animecard = {action}/>
             <Animecard Animecard = {drama}/>

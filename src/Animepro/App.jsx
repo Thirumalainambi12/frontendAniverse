@@ -73,10 +73,46 @@ function App() {
           <Route path="/Profile" element={<PrivateRouter isLoggedIn={isLoggedIn}><Profile /></PrivateRouter>}/>
         </Routes>
         <div className='footer'>
-          <h4>© Aniverse, LLC — All Rights Reserved</h4>
-          <i className="fa-brands fa-facebook"></i>
-          <i className="fa-solid fa-envelope"></i>
-          <i className="fa-brands fa-instagram"></i>
+          <div>
+            <h2>Aniverse</h2>
+            <h3>Sony Pictures |  ©Aniverse,LLC</h3>
+            <p>Welcome to Crunchyroll, your ultimate destination for streaming the best in anime entertainment.</p>
+            <i className="fa-brands fa-facebook"></i>
+            <i className="fa-solid fa-envelope"></i>
+            <i className="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div>
+            <h3>Explore</h3>
+            <p>Browse Popular</p>
+            <p>Browse Simulcasts</p>
+            <p>Browse Genres</p>
+            <p>Browse A-Z</p>
+            <p>Release Calendar</p>
+            <p>News</p>
+          </div>
+          <div>
+            <h3>Resources</h3>
+            <p>Help Center</p>
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+            <p>Cookie Settings</p>
+            <p>About Ads</p>
+            <p>Contact Us</p>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Press</p>
+            <p>Investors</p>
+            <p>Anime Expo</p>
+            <p>Aniverse Store</p>
+            <p>Licensing</p>
+            <p>Affiliates</p>
+          </div>
+
         </div>
       </div>
     </AppContext.Provider>

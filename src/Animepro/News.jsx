@@ -5,7 +5,10 @@ import "../css/News.css";
 function News() {
   return (
     <div className='news-comtainer'>
-      <h2 className='news-h2'>New anime in 2025: the biggest upcoming and ongoing shows</h2>
+      <h2 className="news-h2" style={{ color: "white" }}>
+        New anime in 2025: the biggest upcoming and ongoing shows
+      </h2>
+
 
       <div className='demon'>
         <h2>Demon Slayer: Infinity Castle becomes highest-grossing anime film ever</h2>

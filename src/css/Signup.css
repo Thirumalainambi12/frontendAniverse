@@ -109,48 +109,105 @@
   color: #fff;
 }
 
-@media (max-width: 600px) {
-  .signup-container h2 {
-    font-size: 1.8rem;
-    margin-bottom: 18px;
+/* 📱 MOBILE ONLY */
+@media (max-width: 480px) {
+
+  .signup-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 22px;
+    background: #000;                 /* anime-dark theme */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
   }
 
+  .signup-container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #c58aff;                   /* purple brand color */
+    margin-bottom: 24px;
+  }
+
+  /* CARD BOX */
   .signup {
-    width: 90%;
-    padding: 25px 20px;
+    width: 100%;
+    max-width: 320px;
+    background: #111;
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid #2e0039;
+    box-shadow: 0 0 15px rgba(162, 62, 255, 0.18);
   }
 
   .signup h3 {
-    font-size: 1.05rem;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 18px;
   }
 
+  /* INPUT FIELDS */
   .signup input {
-    padding: 9px;
-    font-size: 0.9rem;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #3b004f;
+    background: #1a001f;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s ease;
   }
 
+  .signup input::placeholder {
+    color: #b5b5b5;
+  }
+
+  .signup input:focus {
+    border-color: #a020f0;
+    box-shadow: 0 0 10px rgba(160, 32, 240, 0.5);
+  }
+
+  /* SIGNUP BUTTON */
   .signup button {
-    padding: 10px;
-    font-size: 0.95rem;
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 10px;
+    background: #a020f0;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+
+  .signup button:active {
+    transform: scale(0.96);
+  }
+
+  /* ALREADY HAVE ACCOUNT SECTION */
+  .link-to-signup {
+    margin-top: 14px;
+  }
+
+  .link-to-signup p {
+    font-size: 13px;
+    color: #ccc;
+  }
+
+  .link-to-signup a {
+    color: #a020f0;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 4px;
+    display: inline-block;
+    text-decoration: none;
   }
 }
 
-@media (max-width: 400px) {
-  .signup-container h2 {
-    font-size: 1.5rem;
-  }
-
-  .signup {
-    width: 95%;
-    padding: 20px 16px;
-  }
-
-  .signup input {
-    padding: 8px;
-    font-size: 0.88rem;
-  }
-
-  .signup button {
-    font-size: 0.9rem;
-  }
-}

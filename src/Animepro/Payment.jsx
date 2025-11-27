@@ -81,8 +81,8 @@ function Payment() {
       {/* Step 2 – Processing */}
       {load && (
         <div className="popup">
-          <h3 className='pop-h3'>Processing {method} payment...</h3>
           <div className="loader"></div>
+          <h3 className='pop-h3'>Processing {method} payment...</h3>
         </div>
       )}
 

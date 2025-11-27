@@ -39,6 +39,7 @@ function Login() {
         </div>
 
         <div className='package'>
+          <h3>Pick Your Premium</h3>
           <div className='pack'>
             <h3 onClick={()=> setYear(false)}>Monthly</h3> 
             <div onClick={()=> setYear(true)}>
